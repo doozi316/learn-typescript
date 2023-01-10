@@ -1,0 +1,12 @@
+{
+    "compilerOptions": {
+        "allowJs": true, // 자바스크립트를 인식
+        "target": "ES5", // 무엇으로 변환할지 
+        "outDir": "./built", // 타입스크립트 빌드 결과물이 어디에 들어갈건지
+        "moduleResolution": "node", // Promise 를 인식시켜주기 위함 
+        "lib": ["ES2015", "DOM", "DOM.Iterable"],
+        "noImplicitAny": true // implicit = 절대적인. 타입을 any 라도 정의해야한다. 
+    },
+    // 어떤 폴더를 대상으로 타입 스크립트를 컴파일 시킬 건지
+    "include": ["./src/**/*"] // ** 은 하위 폴더, * 은 하위 파일을 의미
+}
